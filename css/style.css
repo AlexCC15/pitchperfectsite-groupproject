@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #e2497f;
+    --text-color: #e6e6e6;
+    --subheading-color: #158cb7;
+    --secondary-subheading-color: #f4e224;
+    --white: #FFFFFF;
+    --black: #000000;
+    --link-color: #67a799;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: var(--black);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid;
+    padding: 20px;
+    font-size: larger;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--secondary-subheading-color);
+    margin: 40px;
+}
+
+/*----------------
+   Cast Styling
+----------------*/
+
+.img_cast__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img_cast {
+    max-width: 275px;
+    margin: 10px;
+}
+
+.img_cast__img {
+    height: 375px;
+    width: 275px;
+    object-fit: cover;
+    border: 1px solid var(--text-color);
+}
+
+.img_cast__text {
+    margin: 10px;
+    padding: 20 0;
+    font-size: 1.2em;
+}
+
+.img_cast__bodytext {
+    margin: 10px;
+    padding: 20 0;
+    font-size: 18px;
+}
+
+.img_cast__imdblink {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.img_cast__imdblink:hover {
+    color: var(--link-color);
+}
+
+.name {
+    font-weight: 600;
+    color: var(--subheading-color);
+}
+
+.realname {
+    color: var(--primary-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    body {
+        display: flex;
+        margin: 0 auto;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .nav__container {
+        display: flex;
+        align-content: center;
+        max-width: 200px;
+        min-height: 25px;
+    }
+
+    .nav__link {
+        margin: 10px;
+    }
+
+    .header__title {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .img_card__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .img_card {
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+}
