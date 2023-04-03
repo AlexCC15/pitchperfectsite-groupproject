@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pitch Perfect Soundtrack</title>
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <nav class="header__nav">
+          <a href="#" class="header__logo">Company Name</a>
+          <a href="#" class="header__link">Home</a>
+          <a href="#" class="header__link">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <article class="article">
+            <h1>ACA-BELIEVE IT</h1>
+            <img src="images/ultimate-pitch-perfect-soundtrack.jpg" alt="Pitch Perfect Album Cover">
+            <p>You can now digitally download the Ultimate Pitch Perfect Original Motion Picture Soundtrack!</p>
+            <h2>Get the exclusive soundtrack!</h2>
+            <button class="article__button">Download</button>
+        </article>
+        <section class="spotify">
+          <iframe class="spotify__playlist" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3BAPbSOURubOz4HIs0HZFp?utm_source=generator" width="50%" height="750" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+        <section class="riffoff">
+            <h1 class="riffoff__heading"> Revisit your fav Riff-Off</h1>
+            <iframe class="riffoff__first" width="560" height="315" src="https://www.youtube.com/embed/hGdz2rMbTIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="riffoff__second" width="560" height="315" src="https://www.youtube.com/embed/Qk9tnC-_y70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="riffoff__third" width="560" height="315" src="https://www.youtube.com/embed/fv2gpzNheWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+      </main>
+      <footer class="footer">
+        &copy; Soundtrack <span id="year"></span>
+      </footer>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear()
+      </script>
     
 </body>
 </html>
