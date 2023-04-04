@@ -59,6 +59,12 @@ body {
 .nav__link4 {
     color: var(--text-color2);
 }
+
+.header__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+}
 @media screen and (max-width: 500px) {
 
     body {
