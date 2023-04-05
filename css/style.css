@@ -8,7 +8,6 @@
     --link-color: #67a799;
 }
 
-
 /*---------------
 Universal Styling
 ---------------*/
@@ -33,7 +32,7 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
     margin: 10px;
     font-size: larger;
@@ -45,7 +44,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+   
 }
 
 /*-----------------
@@ -71,13 +71,15 @@ Navigation Styling
     padding: 20px;
 }
 
+
 /*----------------
    Cast Styling
 ----------------*/
 
 .img_cast {
     max-width: 275px;
-    margin: 10px;
+    padding: 10px;
+    margin: 15px;
 }
 
 .img_cast__img {
@@ -132,6 +134,37 @@ Footer Styling
 .footer__copyright-link:hover {
     color: var(--primary-color);
 }
+
+/*-------------
+Article Styling
+--------------*/
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8px;
+    width: 200px;
+    height: 100px;
+}
+
+.social-media__text {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.social-media__icon {
+    margin: 6px;
+}
+
+
+
+
+/*------------
+Media Queries
+-------------*/
 
 @media screen and (max-width: 500px) {
     body {
@@ -212,7 +245,4 @@ Footer Styling
     .img_cast__imdblink:hover {
         color: var(--primary-color);
     }
-
-
-
 }
