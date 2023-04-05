@@ -9,7 +9,7 @@
     --link-color: #67a799;
 }
 
-body {
+.body {
     margin: 0;
     background-color: var(--black);
     color: var(--text-color);
@@ -65,6 +65,43 @@ body {
     font-size: 60px;
     color: var(--text-color);
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    max-width: ;
+}
+
+.par {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.quote {
+    color: var(--primary-color);
+    font-weight: bold; 
+}
+
+.aside {
+    margin-top: auto;
+    text-align: center; 
+    padding: 25px 0; 
+}
+
+.aside_action {
+    font-family:cursive;
+    color: var(--text-color);
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--text-color);
+  }
+
 @media screen and (max-width: 500px) {
 
     body {
