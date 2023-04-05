@@ -11,18 +11,26 @@
 
 body {
     margin: 0;
+    padding: 0;
+    border: 0;
     background-color: var(--black);
     color: var(--text-color);
     min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     font-size: 1.3rem; 
-    font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
     border-bottom: var(--secondary-subheading-color) solid;
     border-bottom-width: thin;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding: 0 12px;
+    width: 100%;
 }
 
 .head {
@@ -59,11 +67,53 @@ body {
 .nav__link4 {
     color: var(--text-color2);
 }
+.main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 
+}
+.article__main_heading{
+    font-size: 50px;
+}
+.article__second_heading{
+    font-size: 25px;
+    color: var(--subheading-color);
+}
+.article__button{
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 15px ;
+
+}
+.article__button:hover {
+    background-color: var(--secondary-subheading-color);
+    padding: 8px 17px;
+}
 .header__title {
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
     color: var(--text-color);
+}
+
+.riffoff__first, .riffoff__second, .riffoff__third{
+    padding: 20px;
+}
+.riffoff__main_heading{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.spotify {
+    padding-top: 20px;
+}
+.footer{
+    margin-top: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
 }
 @media screen and (max-width: 500px) {
 
@@ -71,7 +121,10 @@ body {
         display: flex;
         margin: 0 auto;
         min-height: 100vh;
-        justify-content: center;
+       
+    }
+    .article__main_heading{
+        align-content: center;
     }
 
     .nav__container {
@@ -88,6 +141,6 @@ body {
     .header__title {
         display: flex;
         justify-content: center;
-        margin: 0;
-    }
+        margin: 0;    }
+   
 }
