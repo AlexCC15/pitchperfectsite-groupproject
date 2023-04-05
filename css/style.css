@@ -8,6 +8,7 @@
     --link-color: #67a799;
 }
 
+
 /*---------------
 Universal Styling
 ---------------*/
@@ -47,6 +48,7 @@ body {
     justify-content: space-evenly;
    
 }
+
 
 /*-----------------
 Navigation Styling
@@ -126,14 +128,6 @@ Footer Styling
     border-top: 1px solid var(--secondary-subheading-color);
 }
 
-.footer__copyright-link {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.footer__copyright-link:hover {
-    color: var(--primary-color);
-}
 
 /*-------------
 Article Styling
@@ -200,7 +194,11 @@ Media Queries
 
     .img_cast__text {
         margin: 10px 0;
-        font-size: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .img_cast__imdblink {
+        font-size: 1.1em;
     }
 
     .img_cast__imdblink:hover {
@@ -209,8 +207,13 @@ Media Queries
 
     .img_cast__bodytext {
         margin: 0 0 40px 0;
-        font-size: 1.3em;
+        font-size: 1em;
     }
+
+    .footer {
+        font-size: 8px;
+    }
+
 }
 
 @media screen and (max-width: 820px) {
