@@ -1,6 +1,7 @@
 :root {
     --primary-color: #e2497f;
     --text-color: #e6e6e6;
+    --text-color2:#8f2068;
     --subheading-color: #158cb7;
     --secondary-subheading-color: #f4e224;
     --white: #FFFFFF;
@@ -37,7 +38,6 @@ body {
     padding: 30px;
     margin: 10px;
     font-size: larger;
-    border-bottom: 2px solid var(--secondary-subheading-color);
 }
 
 .swag {
@@ -52,24 +52,58 @@ body {
 Navigation Styling
 -----------------*/
 
-.nav__link {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin: 40px;
-}
-
-.nav__link:hover {
-        color: var(--secondary-subheading-color)
-}
-
-.header__title {
+.header {
+    font-size: 1.3rem; 
+    font-family: 'Oswald', sans-serif;
     display: flex;
-    justify-content: center;
-    font-size: 3em;
-    margin: 12px;
-    padding: 10px;
+    flex-direction: column;
+    border-bottom: var(--secondary-subheading-color) solid;
+    border-bottom-width: thin;
 }
+
+.links {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor:pointer;
+}
+
+.links:hover {
+    color: var(--secondary-subheading-color);
+    transform: translateY(-4px);
+}
+
+.nav__link1 {
+    color: var(--text-color);
+}
+
+.nav__link2 {
+    color: var(--primary-color);
+}
+
+.nav__link3 {
+    color: var(--subheading-color);
+}
+
+.nav__link4 {
+    color: var(--text-color2);
+}
+
+.swag > .header__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+}
+
 
 /*----------------
    Swag Styling
@@ -98,46 +132,14 @@ Navigation Styling
     color: var(--primary-color);
 }
 
-/*-------------
-Article Styling
---------------*/
-
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 8px;
-    width: 200px;
-    height: 100px;
-}
-
-.social-media__text {
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
-}
-
-.social-media__icon {
-    margin: 6px;
-}
-
-/*-------------
-Footer Styling
---------------*/
+/*footer*/
 
 .footer {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 10px;
-    margin: 8px;
-    border-top: 1px solid var(--secondary-subheading-color);
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--text-color);
 }
-
-
-
 
 /*------------
 Media Queries
@@ -181,8 +183,6 @@ Media Queries
     .swag__link:hover {
         color: var(--primary-color);
     }
-
-    
 
     .footer {
         font-size: 8px;
