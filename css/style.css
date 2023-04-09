@@ -1,6 +1,7 @@
 :root {
     --primary-color: #e2497f;
     --text-color: #e6e6e6;
+    --text-color2:#8f2068;
     --subheading-color: #158cb7;
     --secondary-subheading-color: #f4e224;
     --white: #FFFFFF;
@@ -40,29 +41,65 @@ body {
     border-bottom: 2px solid var(--secondary-subheading-color);
 }
 
-.img_cast__container {
+.img {
     max-width: 1200px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
-   
 }
-
 
 /*-----------------
 Navigation Styling
 -----------------*/
 
+.nav__container {
+    max-width: 900px;
+}
+
 .nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 40px;
+}
+
+.nav__link2 {
     text-decoration: none;
     font-weight: 600;
     color: var(--primary-color);
     margin: 40px;
 }
 
+.nav__link3 {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--subheading-color);
+    margin: 40px;
+}
+
+.nav__link4 {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color2);
+    margin: 40px;
+}
+
 .nav__link:hover {
         color: var(--secondary-subheading-color)
+}
+
+.nav__link2:hover {
+    color: var(--secondary-subheading-color)
+}
+
+.nav__link3:hover {
+    color: var(--secondary-subheading-color)
+}
+
+.nav__link4:hover {
+    color: var(--secondary-subheading-color)
 }
 
 .header__title {
@@ -73,10 +110,14 @@ Navigation Styling
     padding: 20px;
 }
 
-
 /*----------------
    Cast Styling
 ----------------*/
+.img__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .img_cast {
     max-width: 275px;
@@ -146,6 +187,7 @@ Article Styling
 .social-media__text {
     display: flex;
     justify-content: center;
+    font-family: cursive;
     font-size: 1em;
 }
 
@@ -182,11 +224,26 @@ Media Queries
     .nav__link {
         margin: 10px;
         padding: 10px;
+        color: var(--text-color);
     }
 
-    .nav__link:hover {
-        color: var(--secondary-subheading-color)
-}
+    .nav__link2 {
+        margin: 10px;
+        padding: 10px;
+        color: var(--primary-color);
+    }
+
+    .nav__link3 {
+        margin: 10px;
+        padding: 10px;
+        color: var(--subheading-color);
+    }
+
+    .nav__link4 {
+        margin: 10px;
+        padding: 10px;
+        color: var(--text-color2);
+    }
 
     .header__title {
         font-size: 35px;
@@ -199,10 +256,6 @@ Media Queries
 
     .img_cast__imdblink {
         font-size: 1.1em;
-    }
-
-    .img_cast__imdblink:hover {
-        color: var(--primary-color);
     }
 
     .img_cast__bodytext {
@@ -224,14 +277,14 @@ Media Queries
         min-height: 100vh;
     }
 
-    .nav__link {
-        margin: 10px;
-        font-size: 22px;
+    .nav__container {
+        display: flex;
+
     }
 
     .nav__link:hover {
-        color: var(--secondary-subheading-color)
-}
+        color: var(--secondary-subheading-color);
+    }
 
     .header__title {
         display: flex;
