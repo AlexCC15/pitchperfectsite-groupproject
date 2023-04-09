@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #e2497f;
+    --text-color: #e6e6e6;
+    --text-color2:#8f2068;
+    --subheading-color: #158cb7;
+    --secondary-subheading-color: #f4e224;
+    --white: #FFFFFF;
+    --black: #000000;
+    --link-color: #67a799;
+}
+
+
+/*---------------
+Universal Styling
+---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--black);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 10px;
+    font-size: larger;
+}
+
+.swag__section {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.social-media {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8px;
+    height: 100px;
+}
+
+.social-media__text {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-family: cursive;
+    color: var(--text-color);
+}
+
+.social-media__icon {
+    margin: 6px;
+}
+
+.social {
+    justify-content: center;
+}
+
+/*-----------------
+Navigation Styling
+-----------------*/
+
+.header {
+    font-size: 1.3rem; 
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-bottom: var(--secondary-subheading-color) solid;
+    border-bottom-width: thin;
+}
+
+.links {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor:pointer;
+}
+
+.links:hover {
+    color: var(--secondary-subheading-color);
+    transform: translateY(-4px);
+}
+
+.nav__link1 {
+    color: var(--text-color);
+}
+
+.nav__link2 {
+    color: var(--primary-color);
+}
+
+.nav__link3 {
+    color: var(--subheading-color);
+}
+
+.nav__link4 {
+    color: var(--text-color2);
+}
+
+.swag > .header__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+/*----------------
+   Swag Styling
+----------------*/
+
+.swag__container {
+    max-width: 275px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.swag__img {
+    height: 375px;
+    width: 275px;
+    object-fit: cover;
+    border: 1px solid var(--text-color);
+    margin-bottom: 10px;
+}
+
+.swag__link {
+    text-decoration: none;
+    color: var(--secondary-subheading-color);
+}
+
+.swag__link:hover {
+    color: var(--primary-color);
+}
+
+/*footer*/
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+/*------------
+Media Queries
+-------------*/
+
+@media screen and (max-width: 700px) {
+    body {
+        display: flex;
+        margin: 0 auto;
+        min-height: 100vh;
+    }
+
+    .logo {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .links:hover {
+        color: var(--secondary-subheading-color)
+    }
+
+    .header__title {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .swag__link {
+        font-size: 1.1em;
+    }
+
+    .swag__link:hover {
+        color: var(--primary-color);
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
