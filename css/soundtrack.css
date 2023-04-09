@@ -163,9 +163,6 @@ body {
         flex-wrap: wrap;
         text-align: center;
     }
-    .article__main_heading{
-        align-content: center;
-    }
 
     .nav {
         display:flex;
@@ -176,13 +173,16 @@ body {
 
     .logo {
         padding-bottom: 10px;
-        font-size: 20px;
         max-width: 100%;
     }
 
     .links {
         margin: 10px;
         padding: 10px;
+    }
+
+    .article__main_heading{
+        align-content: center;
     }
 
 }
