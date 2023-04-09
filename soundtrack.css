@@ -8,17 +8,17 @@
     --black: #000000;
     --link-color: #67a799;
 }
-
-body {
+*{
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+body {
     background-color: var(--black);
     color: var(--text-color);
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
@@ -27,12 +27,9 @@ body {
     flex-direction: column;
     border-bottom: var(--secondary-subheading-color) solid;
     border-bottom-width: thin;
-    justify-content: space-around;
-    
 }
 
 .links {
-    max-width: 900px;
     margin: 0 auto;
     padding-top: 8px;
     text-decoration: none;
@@ -82,11 +79,14 @@ body {
 
 }
 .article__main_heading{
+    padding: 30px;
     font-size: 50px;
 }
 .article__second_heading{
     font-size: 25px;
     color: var(--subheading-color);
+    padding: 30px;
+
 }
 .article__button{
     border-radius: 5px;
@@ -109,6 +109,10 @@ body {
       transform: translateY(-5px);
     }
 }
+.article__paragraph{
+    padding: 30px;
+    padding-bottom: 20px;
+}
 
 .header__title {
     font-family: 'Oswald', sans-serif;
@@ -117,14 +121,14 @@ body {
 }
 
 .riffoff__first, .riffoff__second, .riffoff__third{
-    padding: 20px;
+    padding: 30px;
 }
 .riffoff__main_heading{
     font-size: 40px;
     padding-top: 20px;
 }
 .spotify {
-    padding-top: 20px;
+    padding: 20px;
 }
 .aside {
     margin-top: auto;
@@ -142,59 +146,43 @@ body {
     border-radius: .25px;
 }
 .footer{
+    display: flex;
+
     margin-top: auto;
     text-align: center;
     text-transform: uppercase;
     padding: 15px;
     color: var(--text-color);
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 
     .body {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
         min-height: 100vh;
-        max-width: 100;
-       
+        flex-wrap: wrap;
+        text-align: center;
     }
     .article__main_heading{
         align-content: center;
     }
 
     .nav {
-        display:block;
-        justify-items: center;
-    }
-
-    .nav > a.logo {
-        padding-bottom: 10px;
-        max-width: 100%;
-    }
-
-    main.section1 {
-        float:none;
-        justify-content: center;
-    }
-    .links {
-        display: block;
-        text-align: center;
-        max-width: 100%;
-        padding:0;
-        font-size: 20px;
-        justify-items: center;
-        align-items: center;
-    }
-    .main {
         display:flex;
         flex-direction: column;
-        float: none;
+        justify-items: center;
         margin: 0 auto;
+        }
+
+    .logo {
+        padding-bottom: 10px;
+        font-size: 20px;
+        max-width: 100%;
     }
-  
-    .header__title {
-        display: flex;
-        justify-content: center;
-        margin: 0;    }
-    
+
+    .links {
+        margin: 10px;
+        padding: 10px;
+    }
+
 }
